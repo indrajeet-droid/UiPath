@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Speech.Synthesis;
+using System.Activities.Presentation.Metadata;
+
+namespace ClassSpeak
+{
+    public class RegisterMetadata : IRegisterMetadata
+    {
+        public void Register()
+        {
+        }
+    }
+    public class Class1 
+    {
+        public void speak(string txt)
+        {
+            SpeechSynthesizer synthesizer = new SpeechSynthesizer();
+            synthesizer.Volume = 100;
+            synthesizer.Rate = -2;
+            synthesizer.Speak(txt);
+
+        }
+        
+    }
+}
