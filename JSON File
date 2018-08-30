@@ -1,0 +1,44 @@
+{
+	"dir_root": "D:\\Production\\Holiday Pay Reporting\\Version 4.0",
+	"Drive_Letter": "J",
+	"Cred_Robot": "VirtualRobo1",
+	"strPKIcredentialtarget" : "UKI_PIN",
+	"Cred_Payroll": "Payroll_Cred",
+	"Cred_HP": "HR_Cred",
+	"Login_URL":"https://abc.net/portal",
+	"PO_Name":"Indrajeet Yadav",
+	"Link_Map_Location": "https://sp2013.abc.net/organization/pf/hr/IN/hrautomation/Documents/Holiday%20Pay%20Reporting",
+	"Time_Ref": {"Switch":false,"Time_Ref": "14/02/2018"},
+
+	"arrFile_Names": {
+		"ALReport": "Annual Leave Days Taken –",
+		"PayrollReport": "GL Detail Report",
+		"OTReport": "Overtime Report",
+		"HCReport": "UK Headcount (Incl PD Excl HR and Exec) -"
+	},
+		
+	"arrSheetNames": {
+		"HCTab": ["UK Headcount", "Leavers Since Last Month", "Leavers YTD"],
+		"PayrollTab": "GL Detail Report",
+		"AnnualLeaveTab": "Sheet1"
+	},
+
+	"SMTP_Port": 25,
+	"SMTP_Server": "mail.my-it-solutions.net",
+	"SMTP_SenderEmail": "noreply@abc.net",
+	"SMTP_senderName": "UiPath Robot",
+
+	"Email_PO": {
+		"Emailto": "indrajeet.yadav@abc.net",
+		"cc": "",
+		"subject": "Overtime Reports Notification"
+	},
+	"Email_Support": {
+		"Emailto": "automation.support@abc.net",
+		"cc": "",
+		"subject": "Overtime Reports Notification - Support"
+	}
+
+	
+	
+}
