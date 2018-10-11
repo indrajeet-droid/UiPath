@@ -1,0 +1,1 @@
+dtDistinct.DefaultView.ToTable(True,{"Scorecard code in MyCareer","Personal objective","PO Objective Name", "PO Objective Category", "PO Description","PO Scope","PO Target","PO Weight (%)","PO Curve Type","PO Editable Curve?", "PO Editible Curve description"})
