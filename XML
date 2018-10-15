@@ -1,1 +1,115 @@
+integer.Parse(xmlDocument.Element("Config_Details").Element("Times").Element("Time_Min").Value)
 
+
+
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Config_Details TYPE="110">
+
+	
+<!--For Send Mail(SMTP)-->
+
+	<SMTP>
+
+		<DasId_Value>A666181</DasId_Value>
+
+		<Send_Mail_Port_No>25</Send_Mail_Port_No>
+
+		<Send_Mail_Server_Name>mail.my-it-solutions.net</Send_Mail_Server_Name>
+
+		<Send_Mail_From_ID>xerox.robotone.external@atos.net</Send_Mail_From_ID>
+
+		<Send_Mail_To_Team_Id>indrajeet.yadav@atos.net</Send_Mail_To_Team_Id>
+
+		<Send_Mail_cc_Team_Id>indrajeet.yadav@atos.net</Send_Mail_cc_Team_Id>
+
+	</SMTP>
+
+<!-- Log File -->
+
+		<Log_File>D:\UiPath\Password Reset Activity_1\Logs.txt</Log_File>
+
+<!-- SAP Application -->
+	
+		<Sap_Application>C:\Program Files (x86)\SAP\FrontEnd\SAPgui\saplogon.exe</Sap_Application>
+
+
+<!-- Outlook Properties/Folder -->
+
+	<Outlook_Properties>
+       
+		<Outlook_Username>xerox.robotone.external@atos.net</Outlook_Username>
+
+		<Outlook_Domain>ww930</Outlook_Domain>
+
+		<Outlook_Exchange_URL>https://outlook.office365.com/EWS/Exchange.asmx</Outlook_Exchange_URL>
+
+		<Outlook_Inbox_Folder>Inbox</Outlook_Inbox_Folder>
+
+		<Outlook_ErrorOccured_Folder>Inbox\Error_Occured_Folder</Outlook_ErrorOccured_Folder>
+
+		<Outlook_ProcessCompleted_Folder>Inbox\Process_Completed_Folder</Outlook_ProcessCompleted_Folder>
+
+		<Outlook_AutomaticReply_Folder>Inbox\Email Contains Automatic reply</Outlook_AutomaticReply_Folder>
+
+		<Outlook_NoAttachment_Folder>Inbox\No Attachment</Outlook_NoAttachment_Folder>
+
+	</Outlook_Properties>
+
+<!-- Email Templets -->
+
+	<Email_Templets>
+
+		<Error_In_Processing>D:\UiPath\Password Reset Activity_1\email_templets\Error_in_Processing_Request.txt</Error_In_Processing>
+
+		<Outlook_Password_Changed>D:\UiPath\Password Reset Activity_1\email_templets\Exchange_Password_Changed.txt</Outlook_Password_Changed>
+
+		<Sap_Password_Changed>D:\UiPath\Password Reset Activity_1\email_templets\Password_changed_email_to_security_team.txt</Sap_Password_Changed>
+	
+		<Process_Completed>D:\UiPath\Password Reset Activity_1\email_templets\Request_completed.txt</Process_Completed>
+	
+		<No_Attachment>D:\UiPath\Password Reset Activity_1\email_templets\Reply_if_No_Attachment.txt</No_Attachment>
+	    
+	</Email_Templets>
+
+
+
+
+<!-- Send Mail Subject -->
+
+	<Mail_Subject>
+
+		<Outlook_PasswordChanged_Subject>Notification For Exchange mail Password change in password reset activity automation</Outlook_PasswordChanged_Subject>
+	
+		<SAP_PasswordChanged_Subject>Notification For System Password change in password reset activity automation</SAP_PasswordChanged_Subject>
+
+		<Process_Completed_Subject>Completed</Process_Completed_Subject>
+
+	</Mail_Subject>
+	
+
+<!-- File Paths -->
+	<File_Path>
+
+		<PasswordDatebase_FilePath>D:\UiPath\Password Reset Activity_1\Password_Database.xlsx</PasswordDatebase_FilePath>
+	
+		<Input_FilePath>D:\UiPath\Password Reset Activity_1\Password_reset_details\Password_reset_details.xlsx</Input_FilePath>
+	
+		<Input_FolderPath>D:\UiPath\Password Reset Activity_1\Password_reset_details</Input_FolderPath>
+
+	</File_Path>
+	
+<!-- Timings-->
+	
+	<Times>
+
+		<Time_Max>60000</Time_Max>
+
+		<Time_Med>30000</Time_Med>
+
+		<Time_Min>15000</Time_Min>
+
+	</Times>
+	
+
+
+</Config_Details>
