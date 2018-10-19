@@ -1,3 +1,8 @@
+Read text file
+Desearialize
+XDocument
+
+
 integer.Parse(xmlDocument.Element("Config_Details").Element("Times").Element("Time_Min").Value)
 
 
