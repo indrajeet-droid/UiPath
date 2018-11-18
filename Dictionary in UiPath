@@ -1,0 +1,15 @@
+It stores values on the basis of key. It contains unique keys only. By the help of key, we can easily search or remove elements. 
+It is found in System.Collections.Generic namespace.
+
+config  Dictionary<String, Object>    ---> Declaring
+
+assigning
+
+Config   new Dictionary(of String, Object)   ---> Empty
+
+Config("value1") = "value1"    ---> adding new value
+Config("value2") = "value2"    ---> adding new value
+Config("value3") = "value3"    ---> adding new value
+Config("value4") = "value4"    ---> adding new value
+
+Config("value4").ToString   ---> accessing the value
