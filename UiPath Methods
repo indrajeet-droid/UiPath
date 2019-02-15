@@ -1,0 +1,6 @@
+removing blank cells dt1.Rows.Cast(Of DataRow)().Where(Function(row) Not row.ItemArray.All(Function(field) field Is DBNull.Value Or field.Equals(""))).CopyToDataTable()
+
+foreach (DataRow temprow in temptable.Rows)
+{
+    temptable.Rows.IndexOf(temprow);
+}
