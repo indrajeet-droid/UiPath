@@ -1,0 +1,5 @@
+out_dictConfig("Special_weekly_report_FilePath") = String.Format(out_dictConfig("Special_weekly_report_FilePath").ToString,strCurrentUser)
+strCurrentUser = System.Security.Principal.WindowsIdentity.GetCurrent().Name.Replace(System.Environment.UserDomainName+"\","")
+
+
+C:\Users\{0}\AppData\Roaming\IBM\Client Access\Emulator\private\MMS - Dev.WS
