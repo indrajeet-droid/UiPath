@@ -1,0 +1,13 @@
+Dim xlApp As Microsoft.Office.Interop.Excel.Application 
+Dim OpenedWorkBooks As New List(Of Workbook)()
+Dim xlWorkBook As Microsoft.Office.Interop.Excel.Workbook
+Dim ExcelInstances As Process() = Process.GetProcessesByName("EXCEL")
+
+Dim ExcelInstance As Microsoft.Office.Interop.Excel.Application = TryCast(Marshal.GetActiveObject("Excel.Application"), Microsoft.Office.Interop.Excel.Application)
+For Each WB As Workbook In ExcelInstance.Workbooks
+	If wb.name = "Book1" Then
+		wb.SaveAs("C:\Users\yadav.prasad\Desktop\Akash\Project3\Book1.xlsx")
+		wb.Close(True)
+		
+	End If
+Next
