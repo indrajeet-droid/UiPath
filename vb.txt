@@ -1,0 +1,5 @@
+Dim app As Microsoft.Office.Interop.Word.Application
+Dim oDoc As Microsoft.Office.Interop.Word.Document
+app = New Application
+app.Visible = true
+oDoc = app.Documents.open("C:\Users\yadav.prasad\Desktop\VBA By Niraj\Indrajeet_Yadav.docx")
