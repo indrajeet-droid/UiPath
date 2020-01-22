@@ -3,3 +3,17 @@ Dim oDoc As Microsoft.Office.Interop.Word.Document
 app = New Application
 app.Visible = true
 oDoc = app.Documents.open("C:\Users\yadav.prasad\Desktop\VBA By Niraj\Indrajeet_Yadav.docx")
+
+
+
+Dim xlsApp As Microsoft.Office.Interop.Excel.Application  = Nothing
+Dim xlsWorkBooks As Microsoft.Office.Interop.Excel.Workbooks = Nothing
+Dim xlsWB As Microsoft.Office.Interop.Excel.Workbook = Nothing
+
+xlsApp = New Microsoft.Office.Interop.Excel.Application
+
+xlsApp.DisplayAlerts = False
+
+ xlsApp.Visible = True
+ xlsWorkBooks = xlsApp.Workbooks
+ xlsWB = xlsWorkbooks.Open(in_Path)
